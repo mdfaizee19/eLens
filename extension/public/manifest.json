@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "AcessLens Gaze Reader",
+  "version": "0.1.0",
+  "description": "Webcam gaze tracking that enlarges and focuses the text you're looking at, for low-vision and dyslexic readers.",
+  "permissions": ["activeTab", "scripting", "storage", "unlimitedStorage", "contextMenus"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Toggle AcessLens gaze tracking",
+    "default_popup": "popup/popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["vendor/mediapipe/face_mesh/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

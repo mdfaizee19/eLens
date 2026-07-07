@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "./styles/fonts.css";
+
+:root {
+  --reading-font: 'Atkinson Hyperlegible', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--reading-font);
+  line-height: 1.6;
+}
+
+.reading-surface {
+  font-family: var(--reading-font);
+  line-height: 1.6;
+}

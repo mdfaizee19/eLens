@@ -1,0 +1,5 @@
+node_modules/
+.playwright-browsers/
+.pw-profile*/
+test-build/
+attention.pdf
